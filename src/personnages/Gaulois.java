@@ -23,7 +23,6 @@ public class Gaulois {
 	}
 
 	private String prendreParole() {
-		// TODO Auto-generated method stub
 		return "Le gaulois" + nom + " : ";
 	}
 	
@@ -38,7 +37,9 @@ public class Gaulois {
 	}
 
 	public static void main(String[] args) {
-		
+		Gaulois asterix;
+		asterix = new Gaulois("Astérix", 8);
+		//System.out.println(asterix);
 	}
 
 }
