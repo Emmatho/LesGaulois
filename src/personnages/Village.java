@@ -29,19 +29,21 @@ public class Village {
 		return villageois[num];
 	}
 	
+	public void afficherVillageois() {
+		//TODO parcours de tableau après affiche de phrase contenant le chef
+	}
+	
 	public static void main(String[] args) {
 		Village village;
 		village = new Village("Village des Irréductibles", 30);
 		//Gaulois gaulois = village.trouverHabitant(30);
 		//Le dernier index est 29
-		Gaulois abra = new Gaulois("Abraracourcix", 6);
-		village.ajouterHabitant(abra);
-		Chef abrara = new Chef("Abraracourcix", 6, village);
-		village.setChef(abrara);
+		Chef abra = new Chef("Abraracourcix", 6, village);
+		village.setChef(abra);
 		Gaulois asterix = new Gaulois("Astérix", 8);
 		village.ajouterHabitant(asterix);
 		//Gaulois gaulois = village.trouverHabitant(1);
 		//System.out.println(gaulois);
-		//Le premier habitant est d'indice 0
+		//Le premier habitant est d'indice 0 ; à l'indice 1, il n'y a rien
 	}
 }
