@@ -29,8 +29,16 @@ public class Village {
 		return villageois[num];
 	}
 	
+	public Chef getChef() {
+		return chef;
+	}
+	
 	public void afficherVillageois() {
 		//TODO parcours de tableau après affiche de phrase contenant le chef
+		System.out.println("Dans le village du chef " + getChef().getNom() + " vivent les légendaires gaulois :");
+		for (int i=0 ; i<nbVillageois ; i++) {
+			System.out.println("\n- " + villageois[i].getNom());
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -45,5 +53,8 @@ public class Village {
 		//Gaulois gaulois = village.trouverHabitant(1);
 		//System.out.println(gaulois);
 		//Le premier habitant est d'indice 0 ; à l'indice 1, il n'y a rien
+		Gaulois Obelix = new Gaulois("Obélix", 25);
+		village.ajouterHabitant(Obelix);
+		village.afficherVillageois();
 	}
 }
