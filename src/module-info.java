@@ -1,9 +1,3 @@
-/**
- * 
- */
-/**
- * @author Emma
- *
- */
 module LesGaulois {
+	exports personnages;
 }
